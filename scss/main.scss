@@ -1,0 +1,109 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  scroll-behavior:smooth;
+}
+
+h1, h2, h3{
+    &.lg-heading{
+      font-size:6rem;
+    }
+    &.sm-heading{
+      width:50%;
+      margin-bottom:2rem;
+      padding:0.2rem 1rem;
+      box-shadow: 5px 5px black;
+    }
+}
+body{
+
+  line-height:1.5;
+}
+
+.menu{
+  position:fixed;
+  width:100%;
+  background-color:$secondary-color;
+
+  &-nav{
+    display:flex;
+    list-style:none;
+    justify-content:flex-end;
+  }
+
+  li{
+    text-align:center;
+    padding: 10px 15px 10px 20px;
+  }
+  a{
+    color:white;
+    font-size:1.2rem;
+    text-decoration:none;
+    &:hover{
+      color:$primary-color;
+      @include easeOut;
+    }
+  }
+}
+
+.content {
+    padding:5rem;
+}
+
+
+
+main{
+  #landing-page-container{
+    background-color:$primary-color;
+    height:100vh;
+
+    #landing-page{
+    padding-top:30vh;
+    color:white;
+      .sm-heading{
+        background:rgba(lighten($secondary-back-color,2), 0.9);
+      }
+      p{
+        padding:0.2rem 1rem;
+      }
+    }
+  }
+
+
+
+  #projects{
+    height:100vh;
+    background-color:$secondary-back-color;
+    color:white;
+
+    .sm-heading{
+      background:rgba(lighten($primary-color, 2), 0.9);
+    }
+  }
+
+
+  #contact{
+    height:90vh;
+    background-color:$primary-color;
+    color:white;
+
+    .sm-heading{
+      background:rgba(lighten($secondary-back-color,2), 0.9);
+    }
+  }
+
+}
+
+footer{
+  height:10vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:1.5rem;
+  color:white;
+  background-color:$secondary-back-color;
+}

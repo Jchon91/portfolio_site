@@ -1,0 +1,9 @@
+$back-color: #25274D;
+$secondary-back-color: #464866;
+$primary-color:#25274D;
+$secondary-color: #AAABB8;
+//$secondary-color: #29648A;
+
+@mixin easeOut{
+  transition: all 0.5s ease-out;
+}
