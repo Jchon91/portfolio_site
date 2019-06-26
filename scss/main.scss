@@ -75,7 +75,7 @@ main{
 
 
 
-  #projects{
+  #projects-container{
     height:100vh;
     background-color:$secondary-color;
     color:white;
@@ -98,6 +98,69 @@ main{
 
 }
 
+
+//Projects page
+#works{
+  display:grid;
+  grid-gap: 0.7rem;
+  grid-template-columns:repeat(3, 1fr);
+
+
+  img {
+    width:100%;
+    object-fit: cover;
+    border: 3px white solid;
+
+    &:hover{
+      opacity:0.5;
+      @include easeOut;
+    }
+  }
+}
+
+//button styles
+.btn {
+  text-decoration: none;
+  text-align:center;
+  display:block;
+  padding: 0.5rem 1rem;
+  border:0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    opacity:0.5;
+    @include easeOut;
+  }
+
+
+}
+.btn-dark{
+  @extend .btn;
+  background: $primary-color;
+  color:white;
+
+}
+
+.btn-light{
+  @extend .btn;
+  background: $sub-head-color;
+  color:white;
+}
+
+//contacts page
+.contact-items{
+  display:grid;
+  grid-gap: 0.7rem;
+  grid-template-columns:repeat(4, 1fr);
+  padding-top:10vh;
+
+  a{
+    color:white;
+    text-decoration:none;
+    font-size:3rem;
+  }
+}
+
+
 footer{
   height:10vh;
   display:flex;
@@ -107,3 +170,5 @@ footer{
   color:white;
   background-color:$secondary-color;
 }
+
+@import 'responsive';

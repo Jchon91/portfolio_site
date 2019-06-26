@@ -50,11 +50,11 @@ main #landing-page-container {
     main #landing-page-container #landing-page p {
       padding: 0.2rem 1rem; }
 
-main #projects {
+main #projects-container {
   height: 100vh;
   background-color: #0c0032;
   color: white; }
-  main #projects .sm-heading {
+  main #projects-container .sm-heading {
     background: rgba(56, 0, 221, 0.9); }
 
 main #contact {
@@ -64,6 +64,47 @@ main #contact {
   main #contact .sm-heading {
     background: rgba(56, 0, 221, 0.9); }
 
+#works {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  #works img {
+    width: 100%;
+    object-fit: cover;
+    border: 3px white solid; }
+    #works img:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out; }
+
+.btn-dark {
+  background: #25274D;
+  color: white; }
+
+.btn-light {
+  background: #3500d3;
+  color: white; }
+
+.contact-items {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 10vh; }
+  .contact-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem; }
+
 footer {
   height: 10vh;
   display: flex;
@@ -72,3 +113,46 @@ footer {
   font-size: 1.5rem;
   color: white;
   background-color: #0c0032; }
+
+@media screen and (max-width: 1200px) {
+  main #works {
+    grid-template-columns: repeat(2, 1fr); }
+  main #projects-container {
+    height: 100%; }
+  main .contact-items a {
+    font-size: 2.3rem; } }
+
+@media screen and (max-width: 1000px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main h2.sm-heading {
+      width: 100%; }
+    main .contact-items a {
+      font-size: 2rem; } }
+
+@media screen and (max-width: 830px) {
+  main h1.lg-heading {
+    font-size: 4rem; }
+  main #works {
+    grid-template-columns: 1fr; }
+  main .contact-items {
+    grid-template-areas: 'gmail' 'linkedin' 'github' 'phone';
+    grid-template-columns: 1fr;
+    padding-top: 5px; }
+    main .contact-items a {
+      font-size: 2rem; } }
+
+@media screen and (max-width: 500px) {
+  .menu a {
+    font-size: 1rem; }
+  main h1.lg-heading {
+    line-height: 1; }
+  main h2.sm-heading {
+    font-size: 1rem; }
+  main .content {
+    padding: 2rem; }
+  main #projects h1 {
+    padding-top: 5vh; }
+  main #contact-container {
+    height: calc(70vh + 16vh); } }

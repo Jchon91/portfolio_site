@@ -1,0 +1,87 @@
+//desktop and laptops
+@include mediaLg{
+
+  main{
+    #works{
+      grid-template-columns:repeat(2, 1fr);
+    }
+    #projects-container{
+      height:100%;
+    }
+    .contact-items{
+      a{
+        font-size:2.3rem;
+      }
+    }
+  }
+
+}
+
+@include mediaMd{
+
+  main{
+    align-items:center;
+    text-align:center;
+    h2.sm-heading{
+      width:100%;
+    }
+    .contact-items{
+      a{
+        font-size:2rem;
+      }
+    }
+  }
+}
+
+@include mediaSm{
+  main{
+    h1.lg-heading{
+      font-size:4rem;
+    }
+
+    #works{
+      grid-template-columns: 1fr;
+    }
+    .contact-items{
+      grid-template-areas:
+      'gmail'
+      'linkedin'
+      'github'
+      'phone';
+      grid-template-columns: 1fr;
+      padding-top:5px;
+      a{
+        font-size:2rem;
+      }
+    }
+  }
+}
+
+@include mediaXsm{
+  .menu{
+    a{
+      font-size:1rem;
+    }
+  }
+
+  main{
+    h1.lg-heading{
+      line-height:1;
+    }
+    h2.sm-heading{
+      font-size:1rem;
+    }
+    .content {
+      padding:2rem;
+    }
+    #projects{
+      h1{
+        padding-top:5vh;
+      }
+    }
+    #contact-container{
+      height:calc(70vh + 16vh);
+    }
+
+  }
+}
