@@ -20,7 +20,7 @@ body {
 .menu {
   position: fixed;
   width: 100%;
-  background-color: #AAABB8; }
+  background-color: #151736; }
   .menu-nav {
     display: flex;
     list-style: none;
@@ -33,7 +33,7 @@ body {
     font-size: 1.2rem;
     text-decoration: none; }
     .menu a:hover {
-      color: #25274D;
+      color: #AAABB8;
       transition: all 0.5s ease-out; }
 
 .content {
@@ -46,23 +46,23 @@ main #landing-page-container {
     padding-top: 30vh;
     color: white; }
     main #landing-page-container #landing-page .sm-heading {
-      background: rgba(74, 76, 108, 0.9); }
+      background: rgba(56, 0, 221, 0.9); }
     main #landing-page-container #landing-page p {
       padding: 0.2rem 1rem; }
 
 main #projects {
   height: 100vh;
-  background-color: #464866;
+  background-color: #0c0032;
   color: white; }
   main #projects .sm-heading {
-    background: rgba(40, 42, 84, 0.9); }
+    background: rgba(56, 0, 221, 0.9); }
 
 main #contact {
   height: 90vh;
   background-color: #25274D;
   color: white; }
   main #contact .sm-heading {
-    background: rgba(74, 76, 108, 0.9); }
+    background: rgba(56, 0, 221, 0.9); }
 
 footer {
   height: 10vh;
@@ -71,4 +71,4 @@ footer {
   align-items: center;
   font-size: 1.5rem;
   color: white;
-  background-color: #464866; }
+  background-color: #0c0032; }

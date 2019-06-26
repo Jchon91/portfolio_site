@@ -27,7 +27,7 @@ body{
 .menu{
   position:fixed;
   width:100%;
-  background-color:$secondary-color;
+  background-color:$menu-color;
 
   &-nav{
     display:flex;
@@ -44,7 +44,7 @@ body{
     font-size:1.2rem;
     text-decoration:none;
     &:hover{
-      color:$primary-color;
+      color:$color-transition;
       @include easeOut;
     }
   }
@@ -65,7 +65,7 @@ main{
     padding-top:30vh;
     color:white;
       .sm-heading{
-        background:rgba(lighten($secondary-back-color,2), 0.9);
+        background:rgba(lighten($sub-head-color,2), 0.9);
       }
       p{
         padding:0.2rem 1rem;
@@ -77,11 +77,11 @@ main{
 
   #projects{
     height:100vh;
-    background-color:$secondary-back-color;
+    background-color:$secondary-color;
     color:white;
 
     .sm-heading{
-      background:rgba(lighten($primary-color, 2), 0.9);
+      background:rgba(lighten($sub-head-color, 2), 0.9);
     }
   }
 
@@ -92,7 +92,7 @@ main{
     color:white;
 
     .sm-heading{
-      background:rgba(lighten($secondary-back-color,2), 0.9);
+      background:rgba(lighten($sub-head-color,2), 0.9);
     }
   }
 
@@ -105,5 +105,5 @@ footer{
   align-items:center;
   font-size:1.5rem;
   color:white;
-  background-color:$secondary-back-color;
+  background-color:$secondary-color;
 }
